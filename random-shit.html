@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>You're learning-- it's all good</title>
+    <link rel="stylesheet" href="bootiful.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="top">
+        <h2 class="title">Ik u can do this</h2>
+        <p class="description">
+          Ik it's fcking hard rn but u have to finish ur job and 
+          NEVER GIVE UP NEVER WHAT
+        </p>
+        <p class="description"></p>
+      </div>
+      <div class="bottom">
+        <p class="second-title">
+          Bi hiij chdku bi buuj oglo gj bdhin ornd bi shantrahgu buuj oghgu bi chdn gj bdsn uyde u have to press this button :3 amjiltand hursnihe daraa bodoroi bi end hureh gj her udaan buuj oghgu yvsna
+          and remember (no matter wat u do no matter wat ill be by ur side)
+        </p>
+        <button class="counter-button" onclick="addingTimes() "></button>
+        <p class="second-title">(just click to add 1 time)</p>
+      </div>
+    </div>
+    <script>
+      const totalCount = document.querySelector(".counter-button");
+      let count = JSON.parse(localStorage.getItem("count")) || 0;
+      totalCount.innerHTML = `${count} times`;
+
+      const addingTimes = () => {
+        count++;
+        totalCount.innerHTML = `${count} times`;
+        localStorage.setItem("count", JSON.stringify(count));
+      };
+    </script>
+  </body>
+</html>

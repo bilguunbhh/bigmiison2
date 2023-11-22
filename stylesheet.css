@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Righteous&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #e8eef1;
+  color: #212529;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+/* -------------|Animated Background|-------------  */
+.bg-swap {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #5b62df 50%, #fd0065 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 50%,
+    #ffcc70 100%
+  );
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+/* -----------| Text Animation |----------- */
+
+:root {
+  --color-primary: #f6aca2;
+  --color-secondary: #f49b90;
+  --color-tertiary: #f28b7d;
+  --color-quaternary: #f07a6a;
+  --color-quinary: #ee6352;
+}
+
+.text_shadows {
+  text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+    9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  font-family: "Bungee", cursive;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: calc(2rem + 5vw);
+  text-align: center;
+  margin: 0;
+  color: #e8eef1;
+  -webkit-animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+  animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+  letter-spacing: 0.4rem;
+}
+
+@-webkit-keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  20% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  30% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  40% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  50% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  60% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  70% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  80% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  90% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  20% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  30% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  40% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  50% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  60% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  70% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  80% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  90% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+@-webkit-keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+  }
+  60% {
+    transform: translate(-12px, -12px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+  }
+  60% {
+    transform: translate(-12px, -12px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+/* -----------| main page button |----------- */
+.btn-box {
+  z-index: 1;
+  transition: all 0.2s;
+}
+
+.btn-box:active {
+  vertical-align: top;
+  padding: 4px 6px 3px;
+}
+
+.button {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    #fee8d4 11.3%,
+    #fecfb8 41.2%,
+    #ffb9a2 77.8%
+  );
+  margin: 20px auto;
+  width: 200px;
+  height: 50px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+.button:hover {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    #79d9ff 11.3%,
+    #fecfb8 41.2%,
+    #ffb9a2 77.8%
+  );
+}
+
+.btnTwo {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  margin-top: -99px;
+  padding-top: 2px;
+  left: -250px;
+  transition: 0.3s;
+}
+.btnText {
+  color: #1e1e1e;
+  transition: 0.3s;
+  margin: 15px;
+  text-transform: uppercase;
+}
+.btnText2 {
+  margin-top: 50px;
+  margin-right: -130px;
+  color: #fff;
+  font-size: 2em;
+}
+.button:hover .btnTwo {
+  left: -130px;
+}
+.button:hover .btnText {
+  margin-left: 65px;
+}
+.button:active {
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+}
+/* -----------| Text and Crab |----------- */
+#crab {
+  position: absolute;
+  top: -15px;
+  left: 50vw;
+}
+.hidden {
+  display: none;
+}
+.active {
+  display: inline-block;
+}
+.link-a {
+  margin: 0;
+  box-sizing: border-box;
+  position: absolute;
+  top: 30%;
+  text-decoration: none;
+}
+.link-a h3 {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s ease-in-out;
+  text-decoration: underline;
+}
+
+/* -----------| Social Media |----------- */
+.social-media {
+  display: flex;
+  flex-direction: row;
+}
+.social-media h3 {
+  font-size: 0.5em;
+  color: #353535;
+  font-weight: 300;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  width: 150px;
+  flex-wrap: wrap;
+}
+.buttons-container a {
+  text-decoration: none;
+  font-size: 0.5em;
+}
+.social-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  transition: 0.2s ease-in-out;
+}
+.social-button i {
+  font-size: 1.3em;
+}
+.social-button:hover {
+  cursor: pointer;
+  color: white;
+  font-size: 1.7em;
+}
+.twitter,
+.github,
+.reddit,
+.discord {
+  color: #1e1e1e90;
+}
+
+.discord {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+/* -----------| Mobil settings |----------- */
+
+@media only screen and (max-width: 650px) {
+  .link-a {
+    top: 10%;
+  }
+
+  .social-media h3 {
+    margin: 0 auto;
+  }
+  .buttons-container {
+    margin: 0 auto;
+  }
+
+  .twitter:hover,
+  .github:hover,
+  .reddit:hover,
+  .discord:hover {
+    color: #1e1e1e90;
+    background: none;
+    box-shadow: none;
+  }
+
+  #crab {
+    top: 100%;
+    left: 0vw;
+    z-index: 0;
+    width: 100%;
+  }
+}
